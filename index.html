@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            transition: background 0.5s, color 0.5s;
+        }
+        .dark-mode {
+            background: #333;
+            color: white;
+        }
+        #todo-list {
+            list-style: none;
+            padding: 0;
+        }
+        #todo-list li {
+            background: lightgray;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Hello!</h1>
+    <button id="toggle-mode">Toggle Dark Mode</button>
+    
+    <h2>To-Do List</h2>
+    <input type="text" id="task" placeholder="Enter a task">
+    <button id="add-task">Add Task</button>
+    <ul id="todo-list"></ul>
+    
+    <script>
+        $(document).ready(function() {
+            // Dynamic greeting message
+            let hour = new Date().getHours();
+            if (hour < 12) {
+                $("#greeting").text("Good Morning!");
+            } else if (hour < 18) {
+                $("#greeting").text("Good Afternoon!");
+            } else {
+                $("#greeting").text("Good Evening!");
+            }
+
+            // Toggle dark mode
+            $("#toggle-mode").click(function() {
+                $("body").toggleClass("dark-mode");
+            });
+
+            // Add task to list
+            $("#add-task").click(function() {
+                let task = $("#task").val();
+                if (task) {
+                    $("#todo-list").append("<li>" + task + "</li>").hide().fadeIn();
+                    $("#task").val("");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

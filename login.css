@@ -1,0 +1,126 @@
+/* General Reset */
+body, h1, p, form, input, button, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f); /* Dark celestial background */
+  background-attachment: fixed;
+  color: #f0f8ff; /* Light celestial white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading Styling */
+.form-container h1 {
+  font-size: 2.5rem;
+  color: #f39c12; /* Golden yellow accent */
+  margin-bottom: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #f0f8ff;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f8ff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.input-group input:focus {
+  border: 1px solid #f39c12;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #f39c12, #f1c40f);
+  color: #0d1b2a; /* Dark blue for contrast */
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #f1c40f, #f39c12);
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Sign-up Link */
+.signup-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+.signup-link a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #f1c40f; /* Slightly brighter yellow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}

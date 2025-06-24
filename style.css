@@ -1,0 +1,123 @@
+/* General Reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #f0f8ff; /* Light celestial white */
+  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f); /* Dark starry gradient */
+  background-attachment: fixed;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  display: flex; /* Apply flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height for vertical centering */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #f39c12; /* Golden accent */
+  display: block;
+}
+
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #f0f8ff; /* Light celestial color */
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus {
+  color: #f39c12; /* Golden yellow hover effect */
+  border-bottom: 2px solid #f39c12;
+}
+
+/* Section Styling */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#announcements, #recent-events, #upcoming-events {
+  background: rgba(255, 255, 255, 0.1); /* Subtle overlay for distinction */
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#recent-events, #upcoming-events {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f39c12; /* Golden accent */
+}
+
+.section p {
+  font-size: 1rem;
+  color: #dcdcdc; /* Softer white */
+}
+
+/* Center h1 text */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #f39c12; /* Golden accent */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f0f8ff;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-bar li {
+    margin: 10px 0;
+  }
+}
+
