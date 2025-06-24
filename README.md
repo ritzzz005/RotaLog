@@ -22,7 +22,5 @@
 - **Database**: MySQL (via XAMPP)  
 - **Environment**: XAMPP Apache Server  
 
----
 
-## 🗂️ Project Structure
 
